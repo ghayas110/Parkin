@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* DastaImamiaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* DastaImamiaTests.m */; };
+		00E356F31AD99517003FC87E /* ParkinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ParkinTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		25E180649EA20F5495F07148 /* libPods-DastaImamia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BF3103CC5F6F513150F872 /* libPods-DastaImamia.a */; };
-		2AE8E2B765A929D614C16E6A /* libPods-DastaImamia-DastaImamiaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6777054D4B5980543A16C5 /* libPods-DastaImamia-DastaImamiaTests.a */; };
+		25E180649EA20F5495F07148 /* libPods-Parkin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BF3103CC5F6F513150F872 /* libPods-Parkin.a */; };
+		2AE8E2B765A929D614C16E6A /* libPods-Parkin-ParkinTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6777054D4B5980543A16C5 /* libPods-Parkin-ParkinTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -22,27 +22,27 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = DastaImamia;
+			remoteInfo = "Parkin";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* DastaImamiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DastaImamiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* ParkinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ParkinTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* DastaImamiaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DastaImamiaTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* DastaImamia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DastaImamia.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = DastaImamia/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = DastaImamia/AppDelegate.mm; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = DastaImamia/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = DastaImamia/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = DastaImamia/main.m; sourceTree = "<group>"; };
-		27807053F9B46C080F9421DE /* Pods-DastaImamia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DastaImamia.debug.xcconfig"; path = "Target Support Files/Pods-DastaImamia/Pods-DastaImamia.debug.xcconfig"; sourceTree = "<group>"; };
-		2838AF8784E03BA4E84A668F /* Pods-DastaImamia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DastaImamia.release.xcconfig"; path = "Target Support Files/Pods-DastaImamia/Pods-DastaImamia.release.xcconfig"; sourceTree = "<group>"; };
-		2E2E1573B630C68F8E64AE80 /* Pods-DastaImamia-DastaImamiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DastaImamia-DastaImamiaTests.debug.xcconfig"; path = "Target Support Files/Pods-DastaImamia-DastaImamiaTests/Pods-DastaImamia-DastaImamiaTests.debug.xcconfig"; sourceTree = "<group>"; };
-		35BF3103CC5F6F513150F872 /* libPods-DastaImamia.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DastaImamia.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = DastaImamia/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		856B00862160E1F341C6D775 /* Pods-DastaImamia-DastaImamiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DastaImamia-DastaImamiaTests.release.xcconfig"; path = "Target Support Files/Pods-DastaImamia-DastaImamiaTests/Pods-DastaImamia-DastaImamiaTests.release.xcconfig"; sourceTree = "<group>"; };
-		9B6777054D4B5980543A16C5 /* libPods-DastaImamia-DastaImamiaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DastaImamia-DastaImamiaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F21AD99517003FC87E /* ParkinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ParkinTests.m"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Parkin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parkin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "Parkin/AppDelegate.h"; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = "Parkin/AppDelegate.mm"; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Parkin/Images.xcassets"; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Parkin/Info.plist"; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Parkin/main.m"; sourceTree = "<group>"; };
+		27807053F9B46C080F9421DE /* Pods-Parkin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parkin.debug.xcconfig"; path = "Target Support Files/Pods-Parkin/Pods-Parkin.debug.xcconfig"; sourceTree = "<group>"; };
+		2838AF8784E03BA4E84A668F /* Pods-Parkin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parkin.release.xcconfig"; path = "Target Support Files/Pods-Parkin/Pods-Parkin.release.xcconfig"; sourceTree = "<group>"; };
+		2E2E1573B630C68F8E64AE80 /* Pods-Parkin-ParkinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parkin-ParkinTests.debug.xcconfig"; path = "Target Support Files/Pods-Parkin-ParkinTests/Pods-Parkin-ParkinTests.debug.xcconfig"; sourceTree = "<group>"; };
+		35BF3103CC5F6F513150F872 /* libPods-Parkin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Parkin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "Parkin/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		856B00862160E1F341C6D775 /* Pods-Parkin-ParkinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parkin-ParkinTests.release.xcconfig"; path = "Target Support Files/Pods-Parkin-ParkinTests/Pods-Parkin-ParkinTests.release.xcconfig"; sourceTree = "<group>"; };
+		9B6777054D4B5980543A16C5 /* libPods-Parkin-ParkinTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Parkin-ParkinTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AE8E2B765A929D614C16E6A /* libPods-DastaImamia-DastaImamiaTests.a in Frameworks */,
+				2AE8E2B765A929D614C16E6A /* libPods-Parkin-ParkinTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,20 +59,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25E180649EA20F5495F07148 /* libPods-DastaImamia.a in Frameworks */,
+				25E180649EA20F5495F07148 /* libPods-Parkin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* DastaImamiaTests */ = {
+		00E356EF1AD99517003FC87E /* ParkinTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* DastaImamiaTests.m */,
+				00E356F21AD99517003FC87E /* ParkinTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = DastaImamiaTests;
+			path = "ParkinTests";
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -83,7 +83,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* DastaImamia */ = {
+		13B07FAE1A68108700A75B9A /* Parkin */ = {
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -93,15 +93,15 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = DastaImamia;
+			name = "Parkin";
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				35BF3103CC5F6F513150F872 /* libPods-DastaImamia.a */,
-				9B6777054D4B5980543A16C5 /* libPods-DastaImamia-DastaImamiaTests.a */,
+				35BF3103CC5F6F513150F872 /* libPods-Parkin.a */,
+				9B6777054D4B5980543A16C5 /* libPods-Parkin-ParkinTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,9 +116,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* DastaImamia */,
+				13B07FAE1A68108700A75B9A /* Parkin */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* DastaImamiaTests */,
+				00E356EF1AD99517003FC87E /* ParkinTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -131,8 +131,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* DastaImamia.app */,
-				00E356EE1AD99517003FC87E /* DastaImamiaTests.xctest */,
+				13B07F961A680F5B00A75B9A /* Parkin.app */,
+				00E356EE1AD99517003FC87E /* ParkinTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,10 +140,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				27807053F9B46C080F9421DE /* Pods-DastaImamia.debug.xcconfig */,
-				2838AF8784E03BA4E84A668F /* Pods-DastaImamia.release.xcconfig */,
-				2E2E1573B630C68F8E64AE80 /* Pods-DastaImamia-DastaImamiaTests.debug.xcconfig */,
-				856B00862160E1F341C6D775 /* Pods-DastaImamia-DastaImamiaTests.release.xcconfig */,
+				27807053F9B46C080F9421DE /* Pods-Parkin.debug.xcconfig */,
+				2838AF8784E03BA4E84A668F /* Pods-Parkin.release.xcconfig */,
+				2E2E1573B630C68F8E64AE80 /* Pods-Parkin-ParkinTests.debug.xcconfig */,
+				856B00862160E1F341C6D775 /* Pods-Parkin-ParkinTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -151,9 +151,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* DastaImamiaTests */ = {
+		00E356ED1AD99517003FC87E /* ParkinTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "DastaImamiaTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ParkinTests" */;
 			buildPhases = (
 				3AB326AE7502C38374C1CF16 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -167,14 +167,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = DastaImamiaTests;
-			productName = DastaImamiaTests;
-			productReference = 00E356EE1AD99517003FC87E /* DastaImamiaTests.xctest */;
+			name = "ParkinTests";
+			productname = "ParkinTests";
+			productReference = 00E356EE1AD99517003FC87E /* ParkinTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* DastaImamia */ = {
+		13B07F861A680F5B00A75B9A /* Parkin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "DastaImamia" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Parkin" */;
 			buildPhases = (
 				3E0BFB80B914624E32A9DEC6 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
@@ -188,9 +188,9 @@
 			);
 			dependencies = (
 			);
-			name = DastaImamia;
-			productName = DastaImamia;
-			productReference = 13B07F961A680F5B00A75B9A /* DastaImamia.app */;
+			name = "Parkin";
+			productName = "Parkin";
+			productReference = 13B07F961A680F5B00A75B9A /* Parkin.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -210,7 +210,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "DastaImamia" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Parkin" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -223,8 +223,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* DastaImamia */,
-				00E356ED1AD99517003FC87E /* DastaImamiaTests */,
+				13B07F861A680F5B00A75B9A /* Parkin */,
+				00E356ED1AD99517003FC87E /* ParkinTests */,
 			);
 		};
 /* End PBXProject section */
@@ -271,15 +271,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DastaImamia-DastaImamiaTests/Pods-DastaImamia-DastaImamiaTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Parkin-ParkinTests/Pods-Parkin-ParkinTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DastaImamia-DastaImamiaTests/Pods-DastaImamia-DastaImamiaTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Parkin-ParkinTests/Pods-Parkin-ParkinTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DastaImamia-DastaImamiaTests/Pods-DastaImamia-DastaImamiaTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Parkin-ParkinTests/Pods-Parkin-ParkinTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		1E65EB1D663A14B58FDA58B0 /* [CP] Copy Pods Resources */ = {
@@ -288,15 +288,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DastaImamia-DastaImamiaTests/Pods-DastaImamia-DastaImamiaTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Parkin-ParkinTests/Pods-Parkin-ParkinTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DastaImamia-DastaImamiaTests/Pods-DastaImamia-DastaImamiaTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Parkin-ParkinTests/Pods-Parkin-ParkinTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DastaImamia-DastaImamiaTests/Pods-DastaImamia-DastaImamiaTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Parkin-ParkinTests/Pods-Parkin-ParkinTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3AB326AE7502C38374C1CF16 /* [CP] Check Pods Manifest.lock */ = {
@@ -314,7 +314,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DastaImamia-DastaImamiaTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Parkin-ParkinTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -336,7 +336,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DastaImamia-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Parkin-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -349,15 +349,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DastaImamia/Pods-DastaImamia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Parkin/Pods-Parkin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DastaImamia/Pods-DastaImamia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Parkin/Pods-Parkin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DastaImamia/Pods-DastaImamia-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Parkin/Pods-Parkin-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F5F8FFFB0EC08454EF616405 /* [CP] Copy Pods Resources */ = {
@@ -366,15 +366,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DastaImamia/Pods-DastaImamia-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Parkin/Pods-Parkin-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DastaImamia/Pods-DastaImamia-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Parkin/Pods-Parkin-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DastaImamia/Pods-DastaImamia-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Parkin/Pods-Parkin-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -384,7 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* DastaImamiaTests.m in Sources */,
+				00E356F31AD99517003FC87E /* ParkinTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,7 +402,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* DastaImamia */;
+			target = 13B07F861A680F5B00A75B9A /* Parkin */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -410,14 +410,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E2E1573B630C68F8E64AE80 /* Pods-DastaImamia-DastaImamiaTests.debug.xcconfig */;
+			baseConfigurationReference = 2E2E1573B630C68F8E64AE80 /* Pods-Parkin-ParkinTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = DastaImamiaTests/Info.plist;
+				INFOPLIST_FILE = "ParkinTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -431,17 +431,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DastaImamia.app/DastaImamia";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Parkin.app/Parkin";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 856B00862160E1F341C6D775 /* Pods-DastaImamia-DastaImamiaTests.release.xcconfig */;
+			baseConfigurationReference = 856B00862160E1F341C6D775 /* Pods-Parkin-ParkinTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = DastaImamiaTests/Info.plist;
+				INFOPLIST_FILE = "ParkinTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,20 +455,21 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DastaImamia.app/DastaImamia";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Parkin.app/Parkin";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27807053F9B46C080F9421DE /* Pods-DastaImamia.debug.xcconfig */;
+			baseConfigurationReference = 27807053F9B46C080F9421DE /* Pods-Parkin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S39F354C57;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = DastaImamia/Info.plist;
+				INFOPLIST_FILE = "Parkin/Info.plist";
+             INFOPLIST_KEY_CFBundleDisplayName = "Parkin";
 				INFOPLIST_KEY_CFBundleDisplayName = Dasta_Imamia;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -481,7 +482,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = DastaImamia;
+				PRODUCT_NAME = "Parkin";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -490,13 +491,14 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2838AF8784E03BA4E84A668F /* Pods-DastaImamia.release.xcconfig */;
+			baseConfigurationReference = 2838AF8784E03BA4E84A668F /* Pods-Parkin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S39F354C57;
-				INFOPLIST_FILE = DastaImamia/Info.plist;
+				INFOPLIST_FILE = "Parkin/Info.plist";
+             INFOPLIST_KEY_CFBundleDisplayName = "Parkin";
 				INFOPLIST_KEY_CFBundleDisplayName = Dasta_Imamia;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -509,7 +511,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = DastaImamia;
+				PRODUCT_NAME = "Parkin";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -669,7 +671,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "DastaImamiaTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ParkinTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -678,7 +680,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "DastaImamia" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Parkin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -687,7 +689,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "DastaImamia" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Parkin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
