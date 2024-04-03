@@ -10,6 +10,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Login from '../pages/Login';
+import SignUp from '../pages/SignUp';
 
 const MainNavigation = () => {
     const [isLoggedIn, setIsLoggedIn] = React.useState(false);
@@ -52,6 +53,7 @@ const MainNavigation = () => {
       <Stack.Screen name="Login" >
       {(props) => <Login {...props} onLogin={() => setIsLoggedIn(true)}/>}
       </Stack.Screen>
+      <Stack.Screen name="SignUp" component={SignUp} />
     </Stack.Navigator>
   }
     </NavigationContainer>
