@@ -11,6 +11,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Login from '../pages/Login';
 import SignUp from '../pages/SignUp';
+import ProfileFields from '../pages/ProfileFields';
+import Marhaba from '../pages/Marhaba';
 
 const MainNavigation = () => {
     const [isLoggedIn, setIsLoggedIn] = React.useState(false);
@@ -54,6 +56,10 @@ const MainNavigation = () => {
       {(props) => <Login {...props} onLogin={() => setIsLoggedIn(true)}/>}
       </Stack.Screen>
       <Stack.Screen name="SignUp" component={SignUp} />
+      <Stack.Screen name="ProfileFields" component={ProfileFields} />
+      <Stack.Screen name="Marhaba" >
+      {(props) => <Marhaba {...props} onLogin={() => setIsLoggedIn(true)}/>}
+      </Stack.Screen>
     </Stack.Navigator>
   }
     </NavigationContainer>
