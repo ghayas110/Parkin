@@ -1,10 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import MapComponent from '../components/MapComponent'
 
 const Location = () => {
   return (
     <View>
-      <Text>Location</Text>
+    <MapComponent/>
     </View>
   )
 }

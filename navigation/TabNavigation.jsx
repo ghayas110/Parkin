@@ -35,7 +35,8 @@ const TabNavigation = () => {
             </View>
             ),
           }}/>
-      <Tab.Screen name="Details" component={DetailScreen} options={{
+          <Tab.Screen name="Location" component={Location} options={{
+    
           tabBarIcon: ({ color, size,focused }) => (
             <View style={{alignItems: "center", justifyContent: "center"}}>
                   <Image source={!focused ? require('../images/location.png') : require('../images/location1.png')} style={{ width: 25, height: 20 ,objectFit:'contain' }} />
@@ -43,7 +44,7 @@ const TabNavigation = () => {
             </View>
             ),
           }}/>
-          <Tab.Screen name="Location" component={Location} options={{
+          <Tab.Screen name="Details" component={DetailScreen} options={{
             tabBarIcon: ({ color, size,focused }) => (
               <View
               style={{

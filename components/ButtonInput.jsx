@@ -4,7 +4,7 @@ import Icon from 'react-native-vector-icons/AntDesign';
 const { width, height } = Dimensions.get('window');
 
 const ButtonInput = ({ onPress, title, icon, style }) => {
-  const buttonStyles = title === "Login" || title === "Got it" || title === "SignUp" || title === "Add Car" 
+  const buttonStyles = title === "Login" || title === "Got it" || title === "SignUp" || title === "Add Car"||title == "Save" 
     ? [styles.buttons, style] 
     : [styles.button, style];
 

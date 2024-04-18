@@ -22,6 +22,7 @@ const Login = ({ onLogin }) => {
   const handleModalPress = () => {
     // setBottomSheetVisible(true);
      setModalVisible(true)
+     setBottomSheetVisible(false)
   };
 
   return (
@@ -125,7 +126,8 @@ const Login = ({ onLogin }) => {
           {/* Your Modal Content */}
           <Image source={require('../images/mail.png')}/>
           <Text style={{padding:10}}>Email has been sent</Text>
-      <ButtonInput title={"Got it"} onPress={()=>navigation.navigate('Marhaba')}/>
+      <ButtonInput title={"Got it"} onPress={()=>{navigation.navigate('Marhaba') 
+      setModalVisible(false)}}/>
         </View>
       </Modal>
     </ImageBackground>
