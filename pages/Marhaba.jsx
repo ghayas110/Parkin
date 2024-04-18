@@ -32,8 +32,8 @@ const Marhaba = ({onLogin}) => {
     </View>
     <View>
     <View style={styles.imagecon}>
-    <Image source={require('../images/mawaqif.png')} style={{width:100,height:120,borderRadius:30}}/>
-    <Image source={require('../images/rta.png')}  style={{width:100,height:80,borderRadius:10}}/>
+    <Image source={require('../images/mawaqif.png')} style={{width:100,height:120,borderRadius:10}}/>
+    <Image source={require('../images/rta.png')}  style={{width:100,height:100}}/>
     </View>
     <View style={styles.imagecon}>
     <Image source={require('../images/mipd.png')} style={{width:100,height:100}}/>
