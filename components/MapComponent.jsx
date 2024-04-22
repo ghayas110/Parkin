@@ -13,7 +13,7 @@ const MapComponent = ({onPress,dataSend}) => {
         initialRegion={{
           latitude: 35.7796,
           longitude: -78.6382,
-          latitudeDelta: 0.0922,s
+          latitudeDelta: 0.0922,
           longitudeDelta: 0.0421,
         }}
       >

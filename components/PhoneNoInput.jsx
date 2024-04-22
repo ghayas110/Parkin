@@ -30,7 +30,7 @@ const PhoneNoInput = () => {
         onChangeFormattedText={(text) => {
           setFormattedValue(text);
         }}
-        containerStyle={{ marginTop: 20, borderRadius: 10 }}
+        containerStyle={{ marginTop: 20, borderRadius: 10}}
         textContainerStyle={{ borderRadius: 10 }}
       />
 
