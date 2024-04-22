@@ -36,32 +36,37 @@ const DraggableProgressBar = ({ width, height, barColor, backgroundColor, initia
   });
 
   return (
-    <View
-      style={[styles.container, { width, height, backgroundColor }]}
-      {...panResponder.panHandlers}
-    >
-      <View
-        style={[
-          styles.progressBar,
-          { width: width * progress, backgroundColor: barColor },
-        ]}
-      />
-      <View style={styles.labelsContainer}>
-        <Text style={styles.label}>10</Text>
-        <Text style={styles.label}>20</Text>
-        <Text style={styles.label}>30</Text>
-        <Text style={styles.label}>40</Text>
+    <View style={[styles.container, { width, height }]}>
+      <View style={[styles.progressBarContainer, { backgroundColor }]}>
+        <View
+          style={[
+            styles.progressBar,
+            { width: width * progress, backgroundColor: barColor },
+          ]}
+        />
       </View>
+      <View style={styles.tooltipContainer}>
+        <View style={[styles.tooltip, { left: width * progress - 10 }]}>
+          <Text style={styles.tooltipText}>{Math.round(progress * 100)}</Text>
+        </View>
+      
+      </View>
+      <View
+        style={[styles.touchArea, { width, height }]}
+        {...panResponder.panHandlers}
+      />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    justifyContent: 'center',
-    alignItems: 'flex-start',
-    overflow: 'hidden',
     position: 'relative',
+  },
+  progressBarContainer: {
+    height: 10,
+    borderRadius: 5,
+    overflow: 'hidden',
   },
   progressBar: {
     height: '100%',
@@ -69,17 +74,36 @@ const styles = StyleSheet.create({
     top: 0,
     left: 0,
   },
-  labelsContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+  tooltipContainer: {
     position: 'absolute',
-    width: '100%',
-    bottom: 0,
-    paddingHorizontal: 5,
+    top: -25,
+    left: 0,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
-  label: {
-    fontSize: 12,
-    color: 'black',
+  tooltip: {
+    position: 'absolute',
+    backgroundColor: 'rgba(0, 0, 0, 0.6)',
+    borderRadius: 5,
+    padding: 5,
+    zIndex: 1,
+  },
+  tooltipText: {
+    color: '#fff',
+  },
+  switchCircle: {
+    position: 'absolute',
+    backgroundColor: 'blue',
+    width: 10,
+    height: 10,
+    borderRadius: 5,
+    zIndex: 2,
+  },
+  touchArea: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
   },
 });
 

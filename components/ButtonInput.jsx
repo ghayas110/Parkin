@@ -4,7 +4,7 @@ import Icon from 'react-native-vector-icons/AntDesign';
 const { width, height } = Dimensions.get('window');
 
 const ButtonInput = ({ onPress, title, icon, style }) => {
-  const buttonStyles = title === "Login" || title === "Got it" || title === "SignUp" || title === "Add Car"||title == "Save" 
+  const buttonStyles = title === "Login" || title === "SignUp" || title === "Add Car"||title == "Save" 
     ? [styles.buttons, style] 
     : [styles.button, style];
 
@@ -18,9 +18,9 @@ const ButtonInput = ({ onPress, title, icon, style }) => {
 
 const styles = StyleSheet.create({
   button: {
-    width: width * 0.5, // 80% of screen width
+    width: width * 0.9, // 80% of screen width
     height: height * 0.06, // 10% of screen height
-    backgroundColor: '#01505F',
+    backgroundColor: '#DC0F14',
     flexDirection:'row',
     justifyContent: 'center',
     alignItems: 'center',
