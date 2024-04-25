@@ -1,14 +1,22 @@
-import React, { useState } from 'react';
-import { Dimensions, Image, ImageBackground, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import React, {useState} from 'react';
+import {
+  Dimensions,
+  Image,
+  ImageBackground,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import Modal from 'react-native-modal';
 import PhoneNoInput from '../components/PhoneNoInput';
 import ButtonInput from '../components/ButtonInput';
-import { useNavigation } from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
 
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
 
-const Login = ({ onLogin }) => {
+const Login = ({onLogin}) => {
   const navigation = useNavigation();
   const [bottomSheetVisible, setBottomSheetVisible] = useState(false);
   const [modalVisible, setModalVisible] = useState(false);
@@ -21,8 +29,8 @@ const Login = ({ onLogin }) => {
   };
   const handleModalPress = () => {
     // setBottomSheetVisible(true);
-     setModalVisible(true)
-     setBottomSheetVisible(false)
+    setModalVisible(true);
+    setBottomSheetVisible(false);
   };
 
   return (
@@ -40,94 +48,121 @@ const Login = ({ onLogin }) => {
           </View>
 
           <View style={styles.buttonContainer}>
-          <ButtonInput title={'Login'} onPress={handleButtonPress}/>
-          <TouchableOpacity
-            style={{color: 'white'}}
-            onPress={() => navigation.navigate('SignUp')}>
-            <Text style={{color: 'white', textAlign: 'center'}}>
-              Dont have an Account ?
-              <Text
-                style={{color: '#01DBB6', textDecorationLine: 'underline'}}>
-                SignUp
+            <ButtonInput title={'Login'} onPress={handleButtonPress} />
+            <TouchableOpacity
+              style={{color: 'white'}}
+              onPress={() => navigation.navigate('SignUp')}>
+              <Text style={{color: 'white', textAlign: 'center'}}>
+                Dont have an Account ?
+                <Text
+                  style={{color: '#01DBB6', textDecorationLine: 'underline'}}>
+                  SignUp
+                </Text>
               </Text>
+            </TouchableOpacity>
+            <View style={{display: 'flex', flexDirection: 'row'}}>
+              <TouchableOpacity
+                style={{color: 'white', padding: 10}}
+                onPress={() => navigation.navigate('SignUp')}>
+                <Image
+                  style={styles.logo}
+                  source={require('../images/facebook.png')}
+                />
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={{color: 'white', padding: 10}}
+                onPress={() => navigation.navigate('SignUp')}>
+                <Image
+                  style={styles.logo}
+                  source={require('../images/google.png')}
+                />
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={{color: 'white', padding: 10}}
+                onPress={() => navigation.navigate('SignUp')}>
+                <Image
+                  style={styles.logo}
+                  source={require('../images/apple.png')}
+                />
+              </TouchableOpacity>
+            </View>
+            <Text
+              style={{
+                color: 'white',
+                textAlign: 'center',
+                marginHorizontal: 20,
+                lineHeight: 18,
+                padding: 20,
+              }}>
+              By Clicking “Sign In You Agree With{' '}
+              <Text style={{fontWeight: 'bold'}}>Terms And Conditions</Text> And
+              You Are At Least 18 Years Old”
             </Text>
-          </TouchableOpacity>
-          <View style={{display: 'flex', flexDirection: 'row'}}>
-            <TouchableOpacity
-              style={{color: 'white',padding:10}}
-              onPress={() => navigation.navigate('SignUp')}>
-              <Image
-                style={styles.logo}
-                source={require('../images/facebook.png')}
-              />
-            </TouchableOpacity>
-            <TouchableOpacity
-              style={{color: 'white',padding:10}}
-              onPress={() => navigation.navigate('SignUp')}>
-              <Image
-                style={styles.logo}
-                source={require('../images/google.png')}
-              />
-            </TouchableOpacity>
-            <TouchableOpacity
-              style={{color: 'white',padding:10}}
-              onPress={() => navigation.navigate('SignUp')}>
-              <Image
-                style={styles.logo}
-                source={require('../images/apple.png')}
-              />
-            </TouchableOpacity>
           </View>
-          <Text style={{color: 'white', textAlign: 'center',marginHorizontal:20,lineHeight:18}}>
-          By clicking “Sign in you agree with Terms and Conditions and you are at least 18 years old”
-        </Text>
-        </View>
         </View>
       </View>
 
       {/* Bottom Sheet */}
       <Modal
-          isVisible={bottomSheetVisible}
-          style={{margin: 0,backfaceVisibility:'visible',backgroundColor:'transparent'}}
-          onBackdropPress={toggleBottomSheet}
-          backdropColor='transparent'
-          >
-          <View style={{flex: 1, justifyContent: 'flex-end'}}>
-            <View
-              style={{
-                backgroundColor: 'white',
-                padding: 24,
-                borderTopRightRadius: 20,
-                borderTopLeftRadius: 20,
-              }}>
-              <View>
-              <TouchableOpacity  onPress={handleModalPress} style={{display:'flex',alignItems:'center',justifyContent:'center',flexDirection:'row'}}>
-              <Image source={require('../images/magic.png')}/>
-              <Text
-              style={{
-                fontSize: 20,
-                fontWeight: '200',
-                textAlign:'center',
-                color:"#01505F"
-              }}>
-              Magic Login
-              </Text>
-              </TouchableOpacity>
-              </View>
-             
+        isVisible={bottomSheetVisible}
+        style={{
+          margin: 0,
+          backfaceVisibility: 'visible',
+          backgroundColor: 'transparent',
+        }}
+        onBackdropPress={toggleBottomSheet}
+        backdropColor="transparent">
+        <View style={{flex: 1, justifyContent: 'flex-end'}}>
+          <View
+            style={{
+              backgroundColor: 'white',
+              padding: 40,
+              borderTopRightRadius: 20,
+              borderTopLeftRadius: 20,
+              
+            }}>
+            <View>
+              <TouchableOpacity
+                onPress={handleModalPress}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  flexDirection: 'row',
+                }}>
+                <Image source={require('../images/magic.png')} />
+                <Text
+                  style={{
+                    fontSize: 18,
+                    fontWeight: '700',
+                    textAlign: 'center',
+                    color: '#01505F',
+                    paddingLeft:8
+                    
 
+                  }}>
+                  Magic Login
+                </Text>
+              </TouchableOpacity>
             </View>
           </View>
-        </Modal>
+        </View>
+      </Modal>
 
       {/* Modal */}
       <Modal isVisible={modalVisible}>
         <View style={styles.modalContainer}>
           {/* Your Modal Content */}
-          <Image source={require('../images/mail.png')}/>
-          <Text style={{padding:10}}>Email has been sent</Text>
-      <ButtonInput title={"Got it"} onPress={()=>{navigation.navigate('Marhaba') 
-      setModalVisible(false)}}/>
+          <Image source={require('../images/mail.png')} />
+          <Text style={{padding: 10}}>Email has been sent</Text>
+          <ButtonInput
+          style={{backgroundColor: '#01505F'}} 
+            title={'Got it'}
+            onPress={() => {
+              navigation.navigate('Marhaba');
+              setModalVisible(false);
+            }}
+          />
         </View>
       </Modal>
     </ImageBackground>

@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
   line: {
     width:windowWidth*0.7,
     borderBottomWidth: 1,
-    borderBottomColor: 'whitesmoke', // Change the color as needed
+    borderBottomColor: '#808080', // Change the color as needed
 
   },
 });

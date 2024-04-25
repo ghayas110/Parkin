@@ -38,7 +38,7 @@ export default HomeScreen =(props) => {
 								marginBottom: 22,
 							}}>
 							<Image
-								source = {{uri:"https://i.imgur.com/1tMFzp8.png"}} 
+								source = {require('../images/profilepic.png')} 
 								resizeMode = {"stretch"}
 								style = {{
 									width: 78,
@@ -104,7 +104,7 @@ export default HomeScreen =(props) => {
 							{"Road Users"}
 						</Text>
 						<Image
-							source = {{uri:"https://i.imgur.com/1tMFzp8.png"}} 
+							source = {require('../images/not.png')} 
 							resizeMode = {"stretch"}
 							style = {{
 								width: 17,
@@ -113,7 +113,7 @@ export default HomeScreen =(props) => {
 							}}
 						/>
 						<Image
-							source = {{uri:"https://i.imgur.com/1tMFzp8.png"}} 
+						source = {require('../images/set.png')} 
 							resizeMode = {"stretch"}
 							style = {{
 								width: 19,
@@ -148,7 +148,7 @@ export default HomeScreen =(props) => {
 							{"Parking"}
 						</Text>
 						<Image
-							source = {{uri:"https://i.imgur.com/1tMFzp8.png"}} 
+						source = {require('../images/parking.png')} 
 							resizeMode = {"stretch"}
 							style = {{
 								width: 37,
@@ -176,7 +176,7 @@ export default HomeScreen =(props) => {
 							{"Salik"}
 						</Text>
 						<Image
-							source = {{uri:"https://i.imgur.com/1tMFzp8.png"}} 
+						source = {require('../images/salik.png')} 
 							resizeMode = {"stretch"}
 							style = {{
 								width: 27,
@@ -204,7 +204,7 @@ export default HomeScreen =(props) => {
 							{"Driving & Licensing"}
 						</Text>
 						<Image
-							source = {{uri:"https://i.imgur.com/1tMFzp8.png"}} 
+						source = {require('../images/licence.png')} 
 							resizeMode = {"stretch"}
 							style = {{
 								width: 36,
@@ -232,7 +232,7 @@ export default HomeScreen =(props) => {
 							{"Vechicles & Fines"}
 						</Text>
 						<Image
-							source = {{uri:"https://i.imgur.com/1tMFzp8.png"}} 
+						source = {require('../images/car.png')}  
 							resizeMode = {"stretch"}
 							style = {{
 								width: 25,
@@ -260,7 +260,7 @@ export default HomeScreen =(props) => {
 							{"Green Points"}
 						</Text>
 						<Image
-							source = {{uri:"https://i.imgur.com/1tMFzp8.png"}} 
+						source = {require('../images/car2.png')} 
 							resizeMode = {"stretch"}
 							style = {{
 								width: 25,
@@ -287,7 +287,7 @@ export default HomeScreen =(props) => {
 							{"My Docs"}
 						</Text>
 						<Image
-							source = {{uri:"https://i.imgur.com/1tMFzp8.png"}} 
+						source = {require('../images/docs.png')} 
 							resizeMode = {"stretch"}
 							style = {{
 								width: 25,

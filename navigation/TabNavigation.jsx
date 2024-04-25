@@ -8,6 +8,7 @@ import Icon from 'react-native-vector-icons/dist/Ionicons';
 import Location from '../pages/Location';
 import Article from '../pages/Article';
 import Feed from '../pages/Feed';
+import StackNavigation from './StackNavigation';
 const TabNavigation = () => {
     const Tab = createBottomTabNavigator();
     const screenOptions = {
@@ -35,7 +36,7 @@ const TabNavigation = () => {
             </View>
             ),
           }}/>
-          <Tab.Screen name="Location" component={Location} options={{
+          <Tab.Screen name="Location" component={StackNavigation} options={{
     
           tabBarIcon: ({ color, size,focused }) => (
             <View style={{alignItems: "center", justifyContent: "center"}}>
