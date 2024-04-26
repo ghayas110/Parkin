@@ -16,6 +16,7 @@ import BottomHeader from '../components/BottomHeader';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import Icons from '../components/Icons';
 import ImagePicker, {launchImageLibrary} from 'react-native-image-picker';
+import { useNavigation } from '@react-navigation/native';
 
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
@@ -25,15 +26,16 @@ const Marhaba = ({onLogin}) => {
   const [vehicleImage, setVehicleImage] = useState(null);
   const [plateNumber, setPlateNumber] = useState('');
   const [nickname, setNickname] = useState('');
-
+const navigation = useNavigation()
   const toggleBottomSheet = () => {
     setBottomSheetVisible(!bottomSheetVisible);
   };
   const handleButtonPress = () => {
+    setAddCarVisible(!AddCarVisible)
     setBottomSheetVisible(true);
   };
   const toggleCarSheet = () => {
-    setAddCarVisible(!bottomSheetVisible);
+    setAddCarVisible(!AddCarVisible);
   };
   const [selectedCity, setSelectedCity] = useState(null);
 
@@ -43,7 +45,11 @@ const Marhaba = ({onLogin}) => {
   const handleCarPress = () => {
     setAddCarVisible(true);
   };
-
+  const  handleCarButtonPress = () => {
+    setAddCarVisible(!AddCarVisible)
+    onLogin()
+  };
+ 
   const handlePlateNumberChange = text => {
     setPlateNumber(text);
   };
@@ -83,7 +89,7 @@ const Marhaba = ({onLogin}) => {
             <ButtonInput
               title={'Add Car'}
               style={{position: 'absolute', top: 90, left: 100}}
-              onPress={handleButtonPress}
+              onPress={handleCarPress}
             />
           </View>
           <View>
@@ -146,7 +152,7 @@ const Marhaba = ({onLogin}) => {
                   style={{
                     flexDirection: 'row',
                     alignItems: 'center',
-
+                    justifyContent:'space-between',
                     marginBottom: 26,
                     marginHorizontal: 24,
                   }}>
@@ -164,6 +170,7 @@ const Marhaba = ({onLogin}) => {
                     }}>
                     {'Add Plate Number'}
                   </Text>
+                  <View></View>
                 </View>
                 <Text
                   style={{
@@ -430,109 +437,107 @@ const Marhaba = ({onLogin}) => {
                     paddingLeft: 18,
                     marginHorizontal: 6,
                   }}>
-                  <BottomHeader title={'Select Your Vehicle'} />
+                  <View
+                  style={{
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                    justifyContent:'space-between',
+                    marginBottom: 26,
+                    marginHorizontal: 24,
+                  }}>
+                  <TouchableOpacity onPress={toggleCarSheet}>
+                    <Icons.Ionicons
+                      name="arrow-back"
+                      style={{color: 'black'}}
+                      size={27}
+                    />
+                  </TouchableOpacity>
+                  <Text
+                    style={{
+                      color: '#01505F',
+                      fontSize: 20,
+                    }}>
+                    {'Add Vehicle '}
+                  </Text>
+                  <View></View>
+                </View>
                   <View
                     style={{
                       backgroundColor: '#F5F5F5',
                       borderRadius: 5,
-                      paddingTop: 27,
-                      paddingBottom: 42,
-                      paddingLeft: 268,
+                     padding:30,
                       marginBottom: 42,
                     }}>
-                    <Text
-                      style={{
-                        color: '#022830',
-                        fontSize: 13,
-                        marginBottom: 4,
-                      }}>
-                      {'4x4 Truck'}
-                    </Text>
-                    <View
-                      style={{
-                        flexDirection: 'row',
-                        marginRight: 14,
-                      }}>
-                      <Text
-                        style={{
-                          color: '#808080',
-                          fontSize: 13,
-                          marginTop: 12,
-                          marginRight: 4,
-                          flex: 1,
-                        }}>
-                        {'D 24247'}
-                      </Text>
-                      <Image
-                        source={{uri: 'https://i.imgur.com/1tMFzp8.png'}}
-                        resizeMode={'stretch'}
-                        style={{
-                          width: 17,
-                          height: 17,
-                        }}
-                      />
+                    <View style={{display:'flex',alignItems:'center',justifyContent:'space-around',flexDirection:'row'}}>
+                    <View>
+                    
+                    <Image
+                    source={require('../images/carimg.png')}
+                  
+                    style={{
+                      height: 59,
+                      width:150,
+                  resizeMode:'cover',
+                 
+                    }}
+                    />
                     </View>
+                    <View>
+                    <Text>4x4 Truck</Text>
+                    <Text
+                    style={{
+                      color: 'black',
+                      fontSize: 13,
+                    
+                    }}>
+                    {'D 24247'}
+                  </Text>
+                    </View>
+                        </View>
                   </View>
                   <View
                     style={{
                       backgroundColor: '#99E0D2',
                       borderColor: '#01DBB6',
                       borderRadius: 5,
-                      borderWidth: 2,
-                      paddingTop: 27,
-                      paddingBottom: 42,
-                      paddingLeft: 268,
+                     padding:30,
+                      marginBottom: 12,
                     }}>
-                    <Text
-                      style={{
-                        color: '#022830',
-                        fontSize: 13,
-                        marginBottom: 4,
-                      }}>
-                      {'4x4 Truck'}
-                    </Text>
-                    <View
-                      style={{
-                        flexDirection: 'row',
-                        marginRight: 14,
-                      }}>
-                      <Text
-                        style={{
-                          color: '#FFFFFF',
-                          fontSize: 13,
-                          marginTop: 12,
-                          marginRight: 4,
-                          flex: 1,
-                        }}>
-                        {'D 24247'}
-                      </Text>
-                      <ImageBackground
-                        source={{uri: 'https://i.imgur.com/1tMFzp8.png'}}
-                        resizeMode={'stretch'}
-                        style={{
-                          width: 17,
-                          alignSelf: 'flex-start',
-                          paddingHorizontal: 4,
-                        }}>
-                        <Image
-                          source={{uri: 'https://i.imgur.com/1tMFzp8.png'}}
-                          resizeMode={'stretch'}
-                          style={{
-                            height: 9,
-                            marginTop: 4,
-                          }}
-                        />
-                      </ImageBackground>
+                    <View style={{display:'flex',alignItems:'center',justifyContent:'space-around',flexDirection:'row'}}>
+                    <View>
+                    
+                    <Image
+                    source={require('../images/carimg.png')}
+                  
+                    style={{
+                      height: 59,
+                      width:150,
+                  resizeMode:'cover',
+                 
+                    }}
+                    />
                     </View>
+                    <View>
+                    <Text>4x4 Truck</Text>
+                    <Text
+                    style={{
+                      color: 'black',
+                      fontSize: 13,
+                    
+                    }}>
+                    {'D 24247'}
+                  </Text>
+                    </View>
+                        </View>
                   </View>
                 </View>
-                <View
+                <TouchableOpacity onPress={handleButtonPress}
                   style={{
                     alignItems: 'center',
                     backgroundColor: '#BFF6ED',
                     borderRadius: 30,
                     paddingVertical: 21,
-                    marginBottom: 248,
+                    marginBottom: 98,
                     marginHorizontal: 79,
                   }}>
                   <Text
@@ -542,22 +547,9 @@ const Marhaba = ({onLogin}) => {
                     }}>
                     {'Add More Vehicle'}
                   </Text>
-                </View>
-                <View
-                  style={{
-                    alignItems: 'center',
-                    backgroundColor: '#01DBB6',
-                    borderRadius: 30,
-                    paddingVertical: 21,
-                    marginHorizontal: 124,
-                  }}>
-                  <Text
-                    style={{
-                      color: '#FFFFFF',
-                      fontSize: 16,
-                    }}>
-                    {'Continue'}
-                  </Text>
+                </TouchableOpacity>
+                <View style={{display:'flex',alignItems:'center'}}>
+                <ButtonInput title={"Continue"} onPress={handleCarButtonPress}/>
                 </View>
               </View>
             </View>

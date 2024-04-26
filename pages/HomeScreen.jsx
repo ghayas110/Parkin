@@ -1,9 +1,10 @@
 import React from "react";
 import { SafeAreaView, View, ScrollView, Image, Text, } from "react-native";
 import LoginInput from "../components/LoginInput";
+import { useNavigation } from "@react-navigation/native";
 
 export default HomeScreen =(props) => {
-    
+    const navigation = useNavigation()
     
     return (
         <SafeAreaView 

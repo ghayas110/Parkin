@@ -4,7 +4,7 @@ import Icon from 'react-native-vector-icons/AntDesign';
 const { width, height } = Dimensions.get('window');
 
 const ButtonInput = ({ onPress, title, icon, style,color }) => {
-  const buttonStyles = title === "Login" || title === "SignUp" || title === "Add Car"||title == "Save"||title == "Book with Apple Pay"||title == "Lets Park"||title == "Got it"|| title == "More Payment Options"|| title == "Done"  
+  const buttonStyles = title === "Login" || title === "SignUp" || title === "Add Car"||title == "Save"||title == "Book with Apple Pay"||title == "Lets Park"||title == "Got it"|| title == "More Payment Options"|| title == "Done"||title=="Continue"  
     ? [styles.buttons, style] 
     : [styles.button, style];
 
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 40,
-    marginTop:5,
+    marginTop:15,
     marginBottom:5
   },
   text: {
